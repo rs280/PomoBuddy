@@ -1,0 +1,665 @@
+body {
+  width: 500px;
+  height: 550px;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(88, 105, 219);
+}
+
+:focus {
+  outline: none; /*rgb(234,201,215) dashed 1px;*/
+}
+
+::placeholder {
+  color: rgb(38, 50, 130);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* FOR MAIN MENU VV */
+#title1 {
+  position: absolute; 
+  top: 26%;
+  left: 50%;
+  width: 69%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(38, 50, 130);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Work Sans', sans-serif;
+} 
+#title2 { /*ze acc text*/
+  position: absolute; 
+  top: 24.5%;
+  left: 50%;
+  width: 69%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(38, 50, 130);
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Work Sans', sans-serif;
+} 
+#mainmenu-subtitle1 { 
+  color: white;
+  background-color: rgb(38, 50, 130);
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  left: 50%;
+  font-size: 18px;
+  width: 69%;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  position: absolute;
+  top: 42%;
+  transform: translate(-50%, -50%);
+}
+
+ #mainmenu-subtitle2 { /*ze text*/
+  color: white;
+  background-color: rgb(38, 50, 130);
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  left: 50%;
+  font-size: 18px;
+  width: 69%;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  position: absolute;
+  top: 37%;
+  transform: translate(-50%, -50%);
+} 
+#PomodoroButton {
+  top: 57%;
+}
+
+#ToDoListButton {
+  top: 70%;
+}
+
+#ManageWebsitesButton {
+  top: 83%;
+}
+
+.main-menu-button {
+  color: rgb(38, 50, 130);
+  border-color:white;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  left: 50%;
+  font-size: 20px;
+  width: 73%;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  position: absolute;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+}
+
+.main-menu-button1:hover {
+  border: 1px solid rgb(38, 50, 130);
+}
+
+
+/* FOR TIMER SCREEN VV */
+.timer-text{
+  color: rgb(38, 50, 130);
+  border-color:white;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  left: 50%;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+}
+
+#subtitle{
+  top: 30%;
+  font-size: 18px;
+  width: 69%;
+  max-width: 376px;
+  min-width: 376px;
+  max-height: 20px;
+  min-height: 20px;
+}
+
+#timer{ /* the big time thing */
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 69%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(38, 50, 130);
+  padding-top: 12%;
+  padding-bottom: 12%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Work Sans', sans-serif;
+  border: 3px solid white;
+  max-width: 376px;
+  min-width: 376px;
+  max-height: 75px;
+  min-height: 75px;
+}
+
+#abort{ /*the abort button */
+  top: 80%;
+  font-size: 15px;
+  width: 50%;
+}
+
+
+/* FOR POMODORO SET UP SCREEN VV */
+.timer-setup-display {
+  color: rgb(38, 50, 130);
+  border-color:white;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  left: 50%;
+  font-size: 20px;
+  width: 73%;
+  text-align: left; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  position: absolute;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+}
+#pomodoro-setup { /*FOR THE POMODORO SET UP SCREEN: says 25 min and 5 min and cycles; NOT TESTED YET, USE WITH THE MAIN-MENU-BUTTON*/
+top: 55%;
+left: 80%;
+width: 45%;
+font-size: 15px; 
+}
+#start-button{ /*FOR THE POMODORO SET UP SCREEN: says "start" ; NOT TESTED YET, USE WITH THE MAIN-MENU-BUTTON*/
+  font-size: 35px;
+  top: 87.25%;
+  left: 75%;
+  width: 210px;
+  text-align: center;
+}
+.start-button1:hover{ /*FOR THE POMODORO SET UP SCREEN: says "start" WHEN BUTTON IS HOVER; NOT TESTED YET, USE WITH THE MAIN MENU BUTTON*/
+border: 3px solid rgb(234,201,215);
+}
+
+/*SETUP TIMER*/
+#setup-timer-title {
+  color: rgb(38, 50, 130);
+  border-color:white;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  left: 28%;
+  font-size: 20px;
+  width: 40%;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  position: absolute;
+  top: 28.5%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+}
+
+#setup-title{ /*for the title for everything :?*/
+  position: absolute;
+  top: 12.5%;
+  left: 50%;
+  width: 69%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(38, 50, 130);
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Work Sans', sans-serif;
+  border: 3px solid rgb(249, 236, 239);
+  max-width: 425px;
+  min-width: 425px;
+  max-height: 100px;
+}
+
+.back-button{
+  color: white;
+  border-color:white;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgb(38, 50, 130);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-height: 30px;
+  min-height: 30px;
+  left: 60px;
+  font-size: 18px;
+  top: 91%;
+  width: 70px;
+  padding-top: 0.25%;
+  padding-bottom: 0.25%;
+  padding-left: 0.25%;
+  padding-right: 0.25%;
+  vertical-align: middle;
+}
+.timer-buttons {
+  color: white;
+  border-color:white;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgb(38, 50, 130);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-height: 30px;
+  min-height: 30px;
+
+}
+
+.timer-buttons1:hover{
+  border: 1px solid rgb(234,201,215);
+}
+
+#SelectAll {
+  left: 183px; 
+  font-size: 18px;
+  top: 91%;
+  width: 141px;
+  padding-top: 0.25%;
+  padding-bottom: 0.25%;
+  padding-left: 0.25%;
+  padding-right: 0.25%;
+}
+
+#select-all-box{ /*just the checkbox*/
+  left: 20%;
+  top: 85%;
+  width: 20%;
+}
+
+.boxes {
+  font-size: 14px;
+  text-align: left;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+#ChooseBlocked {
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 13px;
+  text-align: left; 
+  color: rgb(38, 50, 130);
+  background-color: white;
+  top: 60.5%;
+  left: 28%;
+  width: 45%; 
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-width: 216.5px;
+  min-width: 216.5px;
+  max-height: 260px;
+  min-height: 260px; 
+  padding-top: 5px;
+  padding-bottom:5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: auto;
+}
+
+
+
+/*FOR THE FINAL SCREENS (ABORT/COMPLETE) -------------------------------------------------- */
+.final-screens{
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: 'Work Sans', sans-serif;
+  left: 50%;
+  color: rgb(38, 50, 130);
+  max-width: 350px;
+  min-width: 350px; 
+  background-color: white;
+
+}
+#aborted-text{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  vertical-align: middle;
+  top: 50%;
+  font-size: 55px;
+  
+}
+#completed-text{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  vertical-align: middle;
+  top: 47%;
+  font-size: 50px;
+}
+#completed-subtext{
+  padding-top: 10px;
+  padding-bottom: 50px;
+  vertical-align: middle;
+  top: 67%;
+  font-size: 30px;
+}
+
+/*WEBSITESS ------------------------------------------------------------------------- */
+#websites-title{
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  width: 69%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(38, 50, 130);
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Work Sans', sans-serif;
+  max-width: 425px;
+  min-width: 425px;
+  max-height: 100px;
+}
+
+#websites-text{
+  color: rgb(38, 50, 130);
+  border-color:white;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  left: 50%;
+  font-size: 15px;
+  width: 69%;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-width: 420px;
+  min-width: 420px;
+}
+#WebsiteBlocked {
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  text-align: left; 
+  color: rgb(38, 50, 130);
+  background-color: white;
+  top: 46%;
+  left: 50%;
+  width: 45%; 
+  padding-top: 16px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px; /*
+  margin: 3%; */
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-width: 425px;
+  min-width: 425px; 
+  max-height: 160px;
+  min-height: 160px; 
+  overflow: auto;
+}
+
+#websites-list{
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  text-align: left; 
+  color: rgb(38, 50, 130);
+  background-color: white;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 450px;
+  height: 190px;
+  overflow: auto;
+}
+
+#websites-submit{
+  font-size: 15px;
+}
+
+.websites-submit-class{
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  text-align: center; 
+  background-color: rgb(38, 50, 130);
+  border: 3px solid white;
+  color: white;
+  top: 81%;
+  left: 432.5px;
+  transform: translate(-50%, -50%);
+  max-width: 80px;
+  min-width: 80px;
+  max-height: 45px;
+  min-height: 45px;
+}
+
+#todo-remove-button{
+  top: 348px;
+  left: 402px;
+}
+
+#discard-button{
+  color: white;
+}
+
+.discard-button-class{
+  color: white;
+  border-color:white;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgb(38, 50, 130);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-height: 30px;
+  min-height: 30px;
+  left: 430px;
+  font-size: 18px;
+  top: 91%;
+  width: 90px;
+  padding-top: 0.25%;
+  padding-bottom: 0.25%;
+  padding-left: 0.25%;
+  padding-right: 0.25%;
+  vertical-align: middle;  
+}
+
+.websites-submit-hover:hover{
+  border: 2px solid rgb(234,201,215);
+  color: white;
+  background-color: rgb(38, 50, 130);
+}
+
+.div1 {
+  color: rgb(38, 50, 130);
+  border-color:white;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  left: 50%;
+  font-size: 15px;
+  width: 69%;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-width: 420px;
+  min-width: 420px;
+}
+
+#todotitle{
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  width: 69%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(38, 50, 130);
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Work Sans', sans-serif;
+  max-width: 425px;
+  min-width: 425px;
+  max-height: 100px;
+}
+
+.todo-list{
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  text-align: left; 
+  color: rgb(38, 50, 130);
+  background-color: white;
+  top: 156px;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  max-width: 436px;
+  min-width: 436px;
+  max-height: 190px;
+  min-height: 190px;
+  overflow: auto;
+  padding:7px;
+}
+
+#ToDoList {
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  color: purple;
+}
+
+#backfromtodo{
+  color: rgb(38, 50, 130);
+  border-color:white;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-height: 30px;
+  min-height: 30px;
+  left: 430px;
+  font-size: 18px;
+  top: 91%;
+  width: 90px;
+  padding-top: 0.25%;
+  padding-bottom: 0.25%;
+  padding-left: 0.25%;
+  padding-right: 0.25%;
+  vertical-align: middle;  
+}
+
+.input-bar {
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  text-align: left; 
+  color: rgb(38, 50, 130);
+  background-color: white;
+  top: 81%;
+  left: 41.7%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-width: 332px;
+  min-width: 332px;
+  max-height: 37px;
+  min-height: 37px;
+  overflow: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#todo-text {
+  min-width: 423px;
+  max-width: 423px;
+}
+
+#rem{
+  color: rgb(38, 50, 130);
+  border-color:white;
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  max-height: 30px;
+  min-height: 30px;
+  left: 380px;
+  font-size: 18px;
+  top: 91%;
+  width: 90px;
+  padding-top: 0.25%;
+  padding-bottom: 0.25%;
+  padding-left: 0.25%;
+  padding-right: 0.25%;
+  vertical-align: middle;  
+}  
+
+.setup-customize-input-bar{
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  text-align: left; 
+  color: rgb(38, 50, 130
+    );
+  transform: translate(0, 15%);
+  background-color: white;
+  border: 1px solid darkgray;
+  max-width: 190px;
+  min-width: 190px;
+  overflow: auto;
+  padding: 3px;
+}

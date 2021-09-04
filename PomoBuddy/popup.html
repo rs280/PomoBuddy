@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="popup.css">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+	<title>POMOBUDDY</title>
+</head>
+
+<body>
+	<div id="MainMenu">
+		<div id="title1">.</div>
+		<div id="title2">POMOBUDDY</div>
+		<div id="mainmenu-subtitle1">*<br><br></div>
+      <div id="mainmenu-subtitle2">POMODORO PRODUCTIVITY<br>WEBSITE BLOCKER</div>
+      <button id="PomodoroButton" class="main-menu-button main-menu-button1">Be Productive</button>
+      <button id="ToDoListButton" class="main-menu-button main-menu-button1">To Do List</button>
+      <button id="ManageWebsitesButton" class="main-menu-button main-menu-button1">Manage Websites</button>
+  </div>
+
+  <div id="SetupTimer" hidden>
+    <div id="setup-title">Set-Up!</div>
+    <div id="setup-timer-title">Websites to Block</div>
+    <form action="timer-started.html" id="choose-blocked-form" method="get"></form>
+    <button id="SelectAll" class="timer-buttons timer-buttons1">Select All</button>
+    <button id="start-button" class="timer-setup-display start-button1">START</button>
+    <button id="bb1" class="back-button timer-buttons1">&lt&lt</button>
+    <div id="pomodoro-setup" class="timer-setup-display">
+    	<form>
+   	   <label for="round_num">Rounds:</label><br>
+   	   <input type="number" min="1" value="4" id="round_num" name="round_num" class="setup-customize-input-bar"><br><br><br>
+   	   <label for="lbreak_num">Time of long break (mins):</label><br>
+   	   <input type="number" min="1" max="25" value="15" id="lbreak_num" name="lbreak_num" class="setup-customize-input-bar"><br><br>
+  	</form><br>
+	<div id="setup-customize-extratext">Extra text (^ wip, everything <br> is default - 4 rounds w/o <br> long break)</div>
+    </div>
+  </div>
+
+  <div id="TimerOn" hidden>
+    <div id="timer"></div>
+    <div id="subtitle" class="timer-text"></div> 
+    <button id="abort" class="timer-text main-menu-button1">Abort</button> 
+  </div>
+
+  <div id="ToDoList" hidden>
+    <div id="todotitle">To Do List!</div>
+    <div class = "div1">
+      <div id="todo-text" class="div1">Select the ones you want to delete and click "Remove".</div>
+      <form id="cboxes" class="todo-list"></form>
+      <button id="todo-remove-button" class="discard-button-class timer-buttons1">Remove</button>
+    </div>
+    <input type="text" id="userName" class="input-bar" placeholder="Write To-Do Here">
+    <button id="ent" class="websites-submit-class websites-submit-hover">Enter</button>
+    <button id="bb5" class="back-button timer-buttons1">&lt&lt</button> 
+  </div>
+
+  <div id="abortedScreen" hidden>
+    <div id="aborted-text" class="final-screens">Aborted</div>
+    <button id="bb2" class ="back-button timer-buttons1">&lt&lt</button>
+  </div>
+
+  <div id="completedScreen" hidden>
+    <div id="completed-text" class="final-screens">Session<br>Complete!</div>
+    <div id="completed-subtext" class="final-screens">Good Job!</div>
+    <button id="bb3" class="back-button timer-buttons1">&lt&lt</button>
+  </div>
+
+  <div id="websitesScreen" hidden> 
+    <div id="websites-title">Manage Websites!</div>
+    <div id="websites-text">Add and remove sites you want to add to your blocked websites list.</div>
+    <form id="websites-list" method="get"></form>
+    <input type="url" placeholder="https://example.com/" pattern="https://" id="websites-add" class="input-bar">
+    <button id="websites-submit" class="websites-submit-class websites-submit-hover">Add Link </button>
+    <button id="bb4" class="back-button timer-buttons1">&lt&lt</button>
+    <button id="discard-button" class="discard-button-class timer-buttons1">Discard</button>
+  </div>
+
+  <script src="popup.js" type="text/javascript"></script>
+  <script src="timer.js" type="text/javascript"></script>
+  <script src="block_sites.js" type="text/javascript"></script>
+  <script src="cookie_functions.js" type="text/javascript"></script>
+  <script src="todo.js" type="text/javascript"></script>
+  <script src="manage_websites.js" type="text/javascript"></script>
+  <script src="tools.js" type="text/javascript"></script>
+</body>
+</html>
